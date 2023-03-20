@@ -213,6 +213,9 @@ if (window.screen.width < 1000) {
     button.setAttribute('data-bs-toggle', 'modal');
     button.setAttribute('data-bs-target', '#ModalToggle');
     liitem.appendChild(button);
+    button.addEventListener('click',()=>{
+        document.querySelector(".navbar-toggler").click();
+    })
     document.querySelector('.addbutton').appendChild(liitem);
     let liitem2 = document.createElement('li');
     liitem2.classList.add('nav-item');
@@ -222,7 +225,10 @@ if (window.screen.width < 1000) {
     button2.setAttribute('data-bs-toggle', 'modal');
     button2.setAttribute('data-bs-target', '#ModalToggle5');
     liitem2.appendChild(button2);
-
+    
+    button2.addEventListener('click',()=>{
+        document.getElementsByClassName("navbar-toggler").click();
+    })
     document.querySelector('.addbutton').appendChild(liitem2);
 
 

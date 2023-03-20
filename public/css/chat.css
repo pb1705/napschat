@@ -93,3 +93,15 @@ html {
 #history,#prevchats{
     overflow-y: scroll;
 }
+.removed{
+background-color: #fcfcfc;
+ height: 100%; 
+ text-align: center;
+ margin:0;
+  padding: 17% 40%;
+}
+@media screen and (max-width: 800px) {
+    .removed{
+    padding: 20% 20%;
+    }
+}
