@@ -1,0 +1,98 @@
+<%- include('header'); -%>
+<link href="css/styles.css" rel="stylesheet">
+    <title>NAPSChat</title>
+    
+    
+</head>
+<body>
+<section id="intro">
+    <nav class=" nav navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-lg fa-scroll"></i>NAPSchat</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Review</a>
+              </li>
+                
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    <div class="row intro-row">
+        <img class="index-img"src="https://scontent.whatsapp.net/v/t39.8562-34/316546300_547692113846445_7299710494491288098_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=NF_LNvKxNdQAX9OFSxr&_nc_ht=scontent.whatsapp.net&oh=01_AdTnfDOw76ilOB0qNxwhOxJBwrBuuhPl_co_AF8zNLEBiA&oe=641B50E5">
+        <div class="intro-text">
+        <h1 style="margin-bottom: 4px;">Message</h1>
+        <h1 style="margin-bottom: 16px;">privately!</h1>
+        <h4>Chat with Strangers, Create Group Chats</h4>
+        <h4>and much more</h4>
+        <button type="button"  class="btn continue-btn btn-lg">Continue</button>
+    </div>
+    </div>
+</section> 
+    <section id="getusername">
+        <img class="username-img"src="https://scontent.whatsapp.net/v/t39.8562-34/315574582_669241857978207_6336028129238262344_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=cEYO1Uv_ZHEAX_Myys-&_nc_oc=AQnsdEDCJNIcZdujzQYcjrqBHloLhcrzhIDCpXojsBSqStLTL2cOIJ3DI11W1NGQjt8&_nc_ht=scontent.whatsapp.net&oh=01_AdTtWzIsNSud7ZQu9-619p58CtftXEvUY-g2J98JbsuTOg&oe=641BF84C">
+        <div  id ="inpuser"class="username-input">
+            <h2>Join the world of people filled with Amaze,Be Yourself,Chat privately,in groups and with strangers.With no stress of someone bringing past chats into light.</h2>
+            <h4 id="usernameh4">To start chatting fill out your email address below</h4>
+            <div class="card">
+                
+                <div class="card-body">
+                    <form action="/" method="post">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <input type="text" name ="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        
+                      </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email"name ="useremail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        
+                        
+                        <button type="submit" class="btn continue-card-btn">Start Chatting!</button>
+                      </form>
+                </div>
+              </div>
+        </div>
+        <img class="username-img" src="https://scontent.whatsapp.net/v/t39.8562-34/315632381_5616928641708856_9210500231334849736_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=4H2iI5Tv_DEAX-DZkjD&_nc_ht=scontent.whatsapp.net&oh=01_AdR7m_kylQeV3m3ClvFlhITEN9bXJZ-ECT54LmZlgjYQXg&oe=641CB70D">
+    </section>
+    <section id="footer">
+        <i class="fa-brands fa-twitter fa-footer fa-2x"></i>
+        <i class="fa-brands fa-facebook fa-footer fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-footer fa-2x"></i>
+        <i class="fa-solid fa-envelope fa-footer fa-2x"></i>
+        <p class="footer-para">2023 © NAPS</p>
+    </section>
+ 
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('.continue-btn').addEventListener('click',()=>{
+            window.location ="#inpuser";
+        });
+        if(window.screen.width<=650){
+          document.querySelector(".index-img").setAttribute('src','https://raw.githubusercontent.com/pb1705/Images/main/Screenshot%202023-03-20%20130306.png');
+        }
+        if(window.screen.width<=475){
+          document.querySelector(".continue-card-btn").innerHTML="Continue";
+        }
+    </script>
+    
+
+<%- include('footer'); -%>

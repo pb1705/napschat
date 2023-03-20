@@ -1,0 +1,95 @@
+.col,.card,.row{
+    min-height: 85vh;
+    max-height: 85vh;
+}
+.card-header{
+    font-size: 1.5rem;;
+}
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100vh;
+    
+    background-color: #fcf5eb;
+  }
+#padbody{
+    padding:0% 1% 2%;
+    padding-top: 0.5%;
+}
+.nav{
+    background-color:  rgba(252, 245, 235, .8);
+    margin-bottom:2px;
+}
+.fa-plus{
+    color: white;
+}
+.f{
+    border-radius: 100%;
+    float: right;
+    background-color: #12ee62;
+    border: none;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    align-content: center;
+    text-align: center;
+
+}
+
+.btn-cg:hover{
+    background-color: 	#128C7E;
+    color:#FFF;
+}
+.chat{
+
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.msginputuser{
+    padding-bottom: 0;;
+}
+.fa-paper-plane-top{
+    color:black;
+}
+.sendbtn{
+    background-color: transparent;
+    border: none;
+}
+.right{
+    float: right;
+    clear: both;
+    background-color: #12ee62;
+    padding:1% 2%;
+    border-radius: 15%;
+    margin-bottom: 3px;;
+}
+.left{
+    float: left;
+    clear: both;
+    background-color: #FFF;
+    padding:1% 2%;
+    border-radius: 15%;
+    margin-bottom: 3px;;
+
+}
+.msgpara{
+    margin-bottom: 0px;
+}
+#history{
+    padding-top:4% ;
+}
+.chatsection{
+    padding-left: 0px;;
+}
+.recentsection{
+    padding-right: 0px;
+}
+.btn-nav-pushed{
+    background-color: transparent; 
+    border:0;
+    padding: 8px;
+}
+#history,#prevchats{
+    overflow-y: scroll;
+}
