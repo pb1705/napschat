@@ -141,7 +141,7 @@ body{
     .intro-text{
         position: absolute;
         top: 40%;
-        left:7%;
+        left:10%;
         width:80%;
     }
     .intro-text h1{
@@ -195,7 +195,7 @@ body{
     .intro-text{
         position: absolute;
         top: 40%;
-        left:7%;
+        left:10%;
         width:80%;
     }
     .form-text{
@@ -223,8 +223,8 @@ body{
     }
     .intro-text{
         position: absolute;
-        top: 35%;
-        left:7%;
+        top: 32%;
+        left:10%;
         width:80%;
     }
     .form-text{
@@ -239,8 +239,8 @@ body{
     }
     .intro-text{
         position: absolute;
-        top: 35%;
-        left:7%;
+        top: 32%;
+        left:10%;
         width:80%;
     }
     .intro-text h1{
@@ -274,8 +274,8 @@ body{
     
     .intro-text{
         position: absolute;
-        top: 35%;
-        left:7%;
+        top: 32%;
+        left:10%;
         width:80%;
     }
     .intro-text h1{
