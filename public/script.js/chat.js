@@ -34,6 +34,9 @@ socket.on('recievemsg', (data) => {
     if (group) {
         let p = document.createElement('p');
         p.style.marginBottom = '4px';
+        if(window.screen.width<=750){
+            p.style.height="90%";
+        }
         p.innerText = data.username;
         div.appendChild(p);
         p.style.color = "#19A7CE";
@@ -43,6 +46,7 @@ socket.on('recievemsg', (data) => {
     msgbyyouelement.style.marginBottom = '0px';
     msgbyyouelement.innerText = data.msg;
     div.appendChild(msgbyyouelement);
+    
     document.getElementById("history").appendChild(div);
 });
 var grouptosendin = "";

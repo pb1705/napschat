@@ -10,8 +10,8 @@ html {
   }
   body {
     min-height: 100vh;
-    
-    background-color: #fcf5eb;
+     background-color:  #111b21;;
+     /* color: #FFF; */
   }
 #padbody{
     padding:0% 1% 2%;
@@ -20,24 +20,27 @@ html {
 .nav{
     background-color:  rgba(252, 245, 235, .8);
     margin-bottom:2px;
+    /* color: #FFF; */
 }
+
 .fa-plus{
     color: white;
 }
 .f{
     border-radius: 100%;
     float: right;
-    background-color: #12ee62;
+    background-color: transparent;
     border: none;
     margin-right: 2%;
     margin-bottom: 2%;
-    align-content: center;
-    text-align: center;
-
+    text-align: right;
+}
+.plusicon{
+    width:30%;
 }
 
 .btn-cg:hover{
-    background-color: 	#128C7E;
+    background-color: 	#111b21;
     color:#FFF;
 }
 .chat{
@@ -61,17 +64,41 @@ html {
     clear: both;
     background-color: #12ee62;
     padding:1% 2%;
-    border-radius: 15%;
-    margin-bottom: 3px;;
+    border-radius: 5px;
+    margin-bottom: 5px;;
+    max-width: 25%;
 }
 .left{
     float: left;
     clear: both;
     background-color: #FFF;
     padding:1% 2%;
-    border-radius: 15%;
-    margin-bottom: 3px;;
+    border-radius: 5px;
+    margin-bottom: 5px;;
+    max-width: 25%;
 
+}
+@media screen and (max-width: 800px) {
+
+    .right{
+        max-width: 40%;
+        padding: 0.75% 1.5%;
+    }
+    .left{
+        max-width: 40%;
+        padding: 0.75% 1.5%;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .right{
+        max-width: 60%;
+        padding: 0.5% 1.5%;
+    }
+    .left{
+        max-width: 60%;
+        padding: 0.25% 1.5%;
+    }
 }
 .msgpara{
     margin-bottom: 0px;
@@ -94,7 +121,7 @@ html {
     overflow-y: scroll;
 }
 .removed{
-background-color: #fcfcfc;
+background-color: #F6F6F6;
  height: 100%; 
  text-align: center;
  margin:0;
@@ -104,4 +131,21 @@ background-color: #fcfcfc;
     .removed{
     padding: 20% 20%;
     }
+}
+
+.navbar-toggler,.navbar-brand,.nav-link {
+    color:#FFF;
+}
+.navbar-brand:hover{
+    color: #FFF;
+}
+.nav-item:hover{
+    color: #FFF;
+}
+.nav-link:hover{
+    color:#FFF;
+}
+.btn-nav-pushed,.navbar-toggler-icon{
+    color: #FFF!important;
+    
 }
